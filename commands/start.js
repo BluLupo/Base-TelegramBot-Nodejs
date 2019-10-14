@@ -1,1 +1,1 @@
-module.exports = ({ reply }) => reply('started');
+module.exports = ({ reply }) => reply('Sono in funzione!');
