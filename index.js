@@ -14,8 +14,7 @@ bot.use((ctx, next) => {
 // // Register session middleware
 bot.use(session())
 
-bot.start((ctx) => ctx.reply('Sono in funzione!'))
-bot.command('test', StartCommand)
+bot.command('start', StartCommand)
 bot.help((ctx) => ctx.reply('Comando aiuto'))
 bot.hears('ciao', (ctx) => ctx.reply('ciao!'))
 bot.hears('python', (ctx) => ctx.reply('ma sono in Javascript'))
