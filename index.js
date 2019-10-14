@@ -1,6 +1,7 @@
 const Telegraf = require('telegraf')
 const session = require('telegraf/session')
 const config = require('./config')
+const StartCommand = require('./commands/start')
 
 const bot = new Telegraf(config.token)
 bot.use((ctx, next) => {
@@ -14,6 +15,7 @@ bot.use((ctx, next) => {
 bot.use(session())
 
 bot.start((ctx) => ctx.reply('Sono in funzione!'))
+bot.command('test', StartCommand)
 bot.help((ctx) => ctx.reply('Comando aiuto'))
 bot.hears('ciao', (ctx) => ctx.reply('ciao!'))
 bot.hears('python', (ctx) => ctx.reply('ma sono in Javascript'))
