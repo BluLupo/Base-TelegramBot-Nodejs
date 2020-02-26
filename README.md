@@ -1,5 +1,5 @@
 # SImpleNodeJSBot
-Simple Bot NodeJS for test
+Base for telegram bot in NodeJS with Telegraf Library
 
 Require => https://telegraf.js.org
 <br>
